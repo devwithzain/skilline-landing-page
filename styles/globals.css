@@ -14,3 +14,37 @@ body {
 body::-webkit-scrollbar {
 	width: 0%;
 }
+
+@layer utilities {
+	.padding-x {
+		@apply px-[100px] md:px-[30px] sm:px-[20px];
+	}
+
+	.padding-y {
+		@apply py-[100px] lg:py-[80px] md:py-[60px] sm:py-[40px];
+	}
+
+	.margin {
+		@apply mt-[170px] lg:mt-[80px] md:mt-[60px] sm:mt-[40px] mb-[130px] lg:mb-[80px] md:mb-[60px] sm:mb-[40px];
+	}
+
+	.heading {
+		@apply text-[60px] md:text-[50px] sm:text-[40px];
+	}
+
+	.sub-heading {
+		@apply text-[26px] md:text-[22px] sm:text-[18px];
+	}
+
+	.paragraph {
+		@apply text-[18px] md:text-[16px] sm:text-[16px];
+	}
+
+	.sub-paragraph {
+		@apply xl:text-[21px] xl:leading-[31px] text-[16px] leading-[24px];
+	}
+
+	.small-text {
+		@apply xl:text-[16px] xl:leading-[24px] lg:text-[16px] lg:leading-[24px] text-[14px] leading-[22px];
+	}
+}
