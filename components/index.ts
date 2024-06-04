@@ -1,7 +1,14 @@
-export {default as Hero}from "./Hero"
-export {default as Navbar}from "./Navbar"
-export {default as Partners}from "./Partners"
-export {default as Features}from "./Features"
-export {default as About}from "./About"
-export {default as Managment}from "./Managment"
-export {default as OurFeature}from "./OurFeature"
+export { default as Hero } from "./Hero";
+export { default as Navbar } from "./Navbar";
+export { default as Partners } from "./Partners";
+export { default as Features } from "./Features";
+export { default as About } from "./About";
+export { default as Managment } from "./Management";
+export { default as OurFeature } from "./OurFeature";
+export { default as Tools } from './Tools';
+export { default as Assignments } from './Assignments';
+export { default as Disscussion } from './Disscussion';
+export { default as Integration } from './Integration';
+export { default as Testimonials } from './Testimonials';
+export { default as Resources } from './Resources';
+export { default as Footer } from './Footer';
