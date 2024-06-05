@@ -17,27 +17,23 @@ body::-webkit-scrollbar {
 
 @layer utilities {
 	.padding-x {
-		@apply px-[100px] md:px-[30px] sm:px-[20px];
+		@apply px-[150px] md:px-[30px] sm:px-[20px] xm:px-[20px];
 	}
 
 	.padding-y {
-		@apply py-[100px] lg:py-[80px] md:py-[60px] sm:py-[40px];
-	}
-
-	.margin {
-		@apply mt-[170px] lg:mt-[80px] md:mt-[60px] sm:mt-[40px] mb-[130px] lg:mb-[80px] md:mb-[60px] sm:mb-[40px];
+		@apply py-[70px] lg:py-[60px] md:py-[50px] sm:py-[40px] xm:py-[40px];
 	}
 
 	.heading {
-		@apply text-[60px] md:text-[50px] sm:text-[40px];
+		@apply text-[60px] leading-[74px] md:text-[50px] md:leading-[60px] sm:text-[40px] sm:leading-[50px] xm:text-[40px] xm:leading-[50px];
 	}
 
-	.sub-heading {
-		@apply text-[26px] md:text-[22px] sm:text-[18px];
+	.gaping {
+		@apply gap-20 md:gap-14 sm:gap-8 xm:gap-8;
 	}
 
 	.paragraph {
-		@apply text-[18px] md:text-[16px] sm:text-[16px];
+		@apply text-[22px] leading-[40px] md:text-[16px] md:leading-[30px] sm:text-[16px] sm:leading-[30px] xm:text-[16px] xm:leading-[30px];
 	}
 
 	.sub-paragraph {

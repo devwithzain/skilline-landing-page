@@ -12,3 +12,4 @@ export { default as Integration } from './Integration';
 export { default as Testimonials } from './Testimonials';
 export { default as Resources } from './Resources';
 export { default as Footer } from './Footer';
+export { default as Button } from './Button';
