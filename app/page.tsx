@@ -3,11 +3,18 @@ import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 import {
 	About,
+	Assignments,
+	Disscussion,
 	Features,
+	Footer,
 	Hero,
+	Integration,
 	Managment,
 	OurFeature,
 	Partners,
+	Resources,
+	Testimonials,
+	Tools,
 } from "@/components";
 
 export default function Home() {
@@ -28,6 +35,14 @@ export default function Home() {
 			<Features />
 			<About />
 			<OurFeature />
+			<Tools />
+			<Assignments />
+			<Managment />
+			<Disscussion />
+			<Integration />
+			<Testimonials />
+			<Resources />
+			<Footer />
 		</>
 	);
 }

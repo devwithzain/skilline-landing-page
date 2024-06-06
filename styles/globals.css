@@ -25,7 +25,7 @@ body::-webkit-scrollbar {
 	}
 
 	.heading {
-		@apply text-[60px] leading-[74px] md:text-[50px] md:leading-[60px] sm:text-[40px] sm:leading-[50px] xm:text-[40px] xm:leading-[50px];
+		@apply text-[60px] leading-[74px] md:text-[50px] md:leading-[60px] sm:text-[35px] sm:leading-[43px] xm:text-[35px] xm:leading-[43px];
 	}
 
 	.gaping {
