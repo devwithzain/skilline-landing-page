@@ -14,40 +14,40 @@ export default function Footer() {
 						height={120}
 					/>
 					<span className="w-[1px] h-[80px] bg-[#626381]" />
-					<h2 className="text-[22px] text-white font-bold tracking-[0.88px]">
+					<h2 className="paragraph text-white font-bold tracking-[0.88px]">
 						Virtual Class <br /> for Zoom
 					</h2>
 				</div>
 				<div className="flex flex-col gap-6 items-center justify-center">
-					<h2 className="text-[26px] text-[#B2B3CF]  tracking-[1.04px]">
+					<h2 className="paragraph text-[#B2B3CF]  tracking-[1.04px]">
 						Subscribe to get our Newsletter
 					</h2>
-					<div className="flex items-center gap-4">
+					<div className="flex sm:flex-col xm:flex-col items-center gap-4 sm:items-start xm:items-start">
 						<input
 							type="text"
 							className="w-[350px] text-[#83839A] px-[20px] py-[10px] bg-transparent rounded-full border border-[#83839A]"
 							placeholder="Your Email"
 						/>
-						<button className="text-[22px] font-medium  bg-[#545AE7] text-white rounded-full px-[20px] py-[9px]">
+						<button className="paragraph font-medium  bg-[#545AE7] text-white rounded-full px-[20px] py-[9px]">
 							Subscribe
 						</button>
 					</div>
 				</div>
-				<div className="flex items-center gap-4">
-					<p className="text-[#B2B3CF] text-[22px] tracking-[0.8px] text-center">
+				<div className="flex gap-4 flex-wrap items-center">
+					<p className="text-[#B2B3CF] paragraph tracking-[0.8px] text-center sm:text-left xm:text-left">
 						Careers
 					</p>
 					<span className="w-[1px] h-[25px] bg-[#626381]" />
-					<p className="text-[#B2B3CF] text-[22px] tracking-[0.8px] text-center">
+					<p className="text-[#B2B3CF] paragraph tracking-[0.8px] text-center sm:text-left xm:text-left">
 						Privacy Policy
 					</p>
 					<span className="w-[1px] h-[25px] bg-[#626381]" />
-					<p className="text-[#B2B3CF] text-[22px] tracking-[0.8px] text-center">
+					<p className="text-[#B2B3CF] paragraph tracking-[0.8px] text-center sm:text-left xm:text-left">
 						Terms & Conditions
 					</p>
 				</div>
-				<div className="w-full flex items-center justify-center">
-					<p className="text-[#B2B3CF] text-[22px] tracking-[0.8px] text-center">
+				<div className="w-full flex">
+					<p className="text-[#B2B3CF] paragraph tracking-[0.8px] text-center sm:text-left xm:text-left">
 						© {copyWrightYear.getFullYear()} Class Technologies Inc.
 					</p>
 				</div>
