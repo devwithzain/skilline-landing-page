@@ -2,41 +2,41 @@ import Image from "next/image";
 import { Button } from "@/components";
 import { drive, dropbox, onedrive, team } from "@/public";
 
-export default function Management() {
+export default function Integration() {
 	return (
 		<div className="w-full flex flex-col items-center justify-center padding-y padding-x gaping">
-			<div className="w-full flex sm:flex-col xm:flex-col justify-between items-center gap-10">
+			<div className="w-full flex sm:flex-col-reverse xm:flex-col-reverse justify-between items-center gap-10">
 				<div className="w-1/2 sm:w-full xm:w-full flex gap-10 flex-wrap">
-					<div className="w-full flex items-center gap-32">
+					<div className="w-full flex items-center justify-around gaping">
 						<Image
 							alt="dropbox"
 							src={dropbox}
-							className="w-[150px] h-[150px]"
-							width={150}
-							height={150}
+							className="w-[100px] h-[100px]"
+							width={100}
+							height={100}
 						/>
 						<Image
 							alt="onedrive"
 							src={onedrive}
-							className="w-[150px] h-[150px]"
-							width={150}
-							height={150}
+							className="w-[100px] h-[100px]"
+							width={100}
+							height={100}
 						/>
 					</div>
-					<div className="w-full flex items-center gap-32">
+					<div className="w-full flex items-center justify-around gaping">
 						<Image
 							alt="team"
 							src={team}
-							className="w-[150px] h-[150px]"
-							width={150}
-							height={150}
+							className="w-[100px] h-[100px]"
+							width={100}
+							height={100}
 						/>
 						<Image
 							alt="drive"
 							src={drive}
-							className="w-[150px] h-[150px]"
-							width={150}
-							height={150}
+							className="w-[100px] h-[100px]"
+							width={100}
+							height={100}
 						/>
 					</div>
 				</div>

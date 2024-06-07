@@ -1,6 +1,10 @@
-import React from "react";
 import Image from "next/image";
-import { featureImg, feaureIcon1, feaureIcon2, feaureIcon3 } from "@/public";
+import {
+	disscussionImg,
+	feaureIcon1,
+	feaureIcon2,
+	feaureIcon3,
+} from "@/public";
 
 export default function OurFeature() {
 	return (
@@ -18,8 +22,10 @@ export default function OurFeature() {
 			<div className="w-full flex sm:flex-col xm:flex-col justify-between items-center gap-10">
 				<div className="w-1/2 sm:w-full xm:w-full">
 					<Image
-						src={featureImg}
-						alt="featureImg"
+						src={disscussionImg}
+						alt="disscussionImg"
+						width={800}
+						height={400}
 						className="w-full h-full"
 					/>
 				</div>
@@ -36,7 +42,7 @@ export default function OurFeature() {
 							<div className="w-[60px] h-[60px] rounded-full bg-[#FBFBFB] shadow-lg flex items-center justify-center">
 								<Image
 									src={feaureIcon1}
-									alt=""
+									alt="featureImg"
 								/>
 							</div>
 							<p className="paragraph tracking-[0.44px] font-normal text-[#696984]">
@@ -51,7 +57,7 @@ export default function OurFeature() {
 							<div className="w-[60px] h-[60px] rounded-full bg-[#FBFBFB] shadow-lg flex items-center justify-center">
 								<Image
 									src={feaureIcon2}
-									alt=""
+									alt="featureImg"
 								/>
 							</div>
 							<p className="paragraph tracking-[0.44px] font-normal text-[#696984]">
@@ -66,7 +72,7 @@ export default function OurFeature() {
 							<div className="w-[60px] h-[60px] rounded-full bg-[#FBFBFB] shadow-lg flex items-center justify-center">
 								<Image
 									src={feaureIcon3}
-									alt=""
+									alt="featureImg"
 								/>
 							</div>
 							<p className="paragraph tracking-[0.44px] font-normal text-[#696984]">

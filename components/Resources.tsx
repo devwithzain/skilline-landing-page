@@ -50,7 +50,7 @@ export default function Resources() {
 				</div>
 				<div className="w-[60%] sm:w-full xm:w-full flex flex-col gap-6">
 					<div className="w-full flex sm:flex-col xm:flex-col gap-6">
-						<div className="relative">
+						<div className="relative w-full">
 							<Image
 								src={resourcesImg2}
 								alt="resourcesImg2"
@@ -76,7 +76,7 @@ export default function Resources() {
 						</div>
 					</div>
 					<div className="w-full flex sm:flex-col xm:flex-col gap-6">
-						<div className="relative">
+						<div className="relative w-full">
 							<Image
 								src={resourcesImg3}
 								alt="resourcesImg3"
@@ -103,7 +103,7 @@ export default function Resources() {
 						</div>
 					</div>
 					<div className="w-full flex sm:flex-col xm:flex-col items-center gap-6">
-						<div className="relative">
+						<div className="relative w-full">
 							<Image
 								src={resourcesImg4}
 								alt="resourcesImg4"

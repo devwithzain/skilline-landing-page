@@ -40,7 +40,7 @@ export default function Testimonials() {
 						src={testimonials}
 						width={800}
 						height={400}
-						className="w-full h-full rounded-2xl"
+						className="w-full h-full rounded-2xl sm:hidden xm:hidden"
 					/>
 					<div className="w-full absolute flex flex-col gap-4 rounded-2xl bg-white shadow-md p-[20px] bottom-[10%] before:bg-black">
 						<div className="w-full flex gap-4 items-center">
