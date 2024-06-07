@@ -21,7 +21,7 @@ export default function Features() {
 			<div className="flex sm:flex-col xm:flex-col items-center justify-center gap-10">
 				{featuresItem.map((item) => (
 					<div
-						className="w-[400px] h-[450px] sm:w-full xm:w-full sm:h-full xm:h-full bg-white shadow-2xl rounded-2xl px-6 py-24 relative"
+						className="w-[400px] h-[450px] sm:w-full xm:w-full sm:h-full xm:h-full bg-white shadow-2xl rounded-2xl px-6 padding-y relative"
 						key={item.id}>
 						<div className="sm:hidden xm:hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
 							<Image
