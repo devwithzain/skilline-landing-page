@@ -8,7 +8,7 @@ export default function Hero() {
 		<div className="w-full h-screen flex flex-col padding-x bg-cover bg-center bg-[#FFF2E1] rounded-b-[100%]">
 			<Navbar />
 			<div className="w-full flex sm:flex-col xm:flex-col justify-center items-center gap-6">
-				<div className="flex w-1/2 sm:w-full xm:w-full flex-col gap-6">
+				<div className="flex w-1/2 sm:w-full xm:w-full flex-col gap-6 mt-10">
 					<h1 className="heading font-bold text-[#2F327D]">
 						<span className="heading font-bold text-[#F48C06]">
 							Studying&nbsp;
