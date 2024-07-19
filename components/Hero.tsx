@@ -1,27 +1,41 @@
-import React from "react";
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { Button, Navbar } from "@/components";
 import { calander, email, heroImg, mark, people1, play, stats } from "@/public";
+import { heroTextVarients, scaleInVarients } from "@/motion";
 
 export default function Hero() {
 	return (
 		<div className="w-full h-screen flex flex-col padding-x bg-cover bg-center bg-[#FFF2E1] rounded-b-[100%]">
 			<Navbar />
 			<div className="w-full flex sm:flex-col xm:flex-col justify-center items-center gap-6">
-				<div className="flex w-1/2 sm:w-full xm:w-full flex-col gap-6 mt-10">
-					<h1 className="heading font-bold text-[#2F327D]">
+				<div className="flex w-1/2 sm:w-full xm:w-full flex-col gap-6 mt-10 overflow-hidden">
+					<motion.h1
+						initial="initial"
+						animate="animate"
+						variants={heroTextVarients}
+						className="heading font-bold text-[#2F327D]">
 						<span className="heading font-bold text-[#F48C06]">
 							Studying&nbsp;
 						</span>
 						Online <br />
 						is now much easier
-					</h1>
-					<p className="paragraph font-normal text-[#464646]">
+					</motion.h1>
+					<motion.p
+						className="paragraph font-normal text-[#464646]"
+						initial="initial"
+						animate="animate"
+						variants={heroTextVarients}>
 						Skilline is an interesting platform that will teach{" "}
 						<br className="sm:hidden xm:hidden" /> you in more an interactive
 						way
-					</p>
-					<div className="flex gap-4 items-center">
+					</motion.p>
+					<motion.div
+						className="flex gap-4 items-center"
+						initial="initial"
+						animate="animate"
+						variants={heroTextVarients}>
 						<Button
 							title="Join for free"
 							className="bg-[#F48C06] text-white px-[20px] py-[5px]"
@@ -39,17 +53,26 @@ export default function Hero() {
 							title="Watch how it works"
 							className="text-[#464646] px-[20px] py-[5px]"
 						/>
-					</div>
+					</motion.div>
 				</div>
 				<div className="flex w-1/2 sm:w-full xm:w-full items-center justify-center relative">
-					<Image
-						src={heroImg}
-						alt="heroImg"
-						width={800}
-						height={400}
-						className="w-[544px] h-full object-cover"
-					/>
-					<div className="flex items-center gap-2 bg-[#ffffffe7] absolute top-1/4 left-[40px] px-4 py-3 rounded-2xl sm:hidden xm:hidden">
+					<motion.div
+						initial="initial"
+						animate="animate"
+						variants={scaleInVarients(1.3)}>
+						<Image
+							src={heroImg}
+							alt="heroImg"
+							width={800}
+							height={400}
+							className="w-[544px] h-full object-cover"
+						/>
+					</motion.div>
+					<motion.div
+						className="flex items-center gap-2 bg-[#ffffffe7] absolute top-1/4 left-[40px] px-4 py-3 rounded-2xl sm:hidden xm:hidden"
+						initial="initial"
+						animate="animate"
+						variants={scaleInVarients(1.6)}>
 						<Image
 							src={calander}
 							alt="heroImg"
@@ -62,16 +85,24 @@ export default function Hero() {
 								Assisted Student
 							</p>
 						</div>
-					</div>
-					<div className="absolute top-[100px] right-[80px] px-4 py-3 rounded-2xl sm:hidden xm:hidden">
+					</motion.div>
+					<motion.div
+						className="absolute top-[100px] right-[80px] px-4 py-3 rounded-2xl sm:hidden xm:hidden"
+						initial="initial"
+						animate="animate"
+						variants={scaleInVarients(1.9)}>
 						<Image
 							src={stats}
 							alt="heroImg"
 							width={100}
 							height={100}
 						/>
-					</div>
-					<div className="flex items-center gap-2 bg-[#ffffffe7] absolute top-[50%] right-[-20px] px-4 py-3 rounded-2xl sm:hidden xm:hidden">
+					</motion.div>
+					<motion.div
+						className="flex items-center gap-2 bg-[#ffffffe7] absolute top-[50%] right-[-20px] px-4 py-3 rounded-2xl sm:hidden xm:hidden"
+						initial="initial"
+						animate="animate"
+						variants={scaleInVarients(2.2)}>
 						<Image
 							src={email}
 							alt="heroImg"
@@ -95,8 +126,12 @@ export default function Hero() {
 								Your admission completed
 							</p>
 						</div>
-					</div>
-					<div className="flex flex-col gap-2 bg-[#ffffffe7] absolute bottom-[100px] left-[-20px] px-4 py-3 rounded-2xl sm:hidden xm:hidden">
+					</motion.div>
+					<motion.div
+						className="flex flex-col gap-2 bg-[#ffffffe7] absolute bottom-[100px] left-[-20px] px-4 py-3 rounded-2xl sm:hidden xm:hidden"
+						initial="initial"
+						animate="animate"
+						variants={scaleInVarients(2.5)}>
 						<div className="flex items-center gap-2">
 							<Image
 								src={people1}
@@ -119,7 +154,7 @@ export default function Hero() {
 								className="text-white bg-[#D8587E] px-[20px] py-[5px]"
 							/>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</div>

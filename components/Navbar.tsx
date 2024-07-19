@@ -1,13 +1,19 @@
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Button from "./Button";
 import { logo } from "@/public";
+import { motion } from "framer-motion";
 import { navbarItem } from "@/constant";
+import { navbarVarients } from "@/motion";
 
 export default function Navbar() {
 	return (
-		<nav className="w-full flex justify-between items-center h-[10vh]">
+		<motion.nav
+			initial="initial"
+			whileInView="animate"
+			variants={navbarVarients}
+			viewport={{ once: true }}
+			className="w-full flex justify-between items-center h-[10vh]">
 			<div>
 				<Image
 					src={logo}
@@ -40,6 +46,6 @@ export default function Navbar() {
 					/>
 				</div>
 			</div>
-		</nav>
+		</motion.nav>
 	);
 }

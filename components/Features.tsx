@@ -1,17 +1,20 @@
-import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { featuresItem } from "@/constant";
+import { TypingText } from "./custom-text";
+import { staggerContainer } from "@/motion";
 
 export default function Features() {
 	return (
 		<div className="w-full flex flex-col items-center justify-center padding-y padding-x gaping">
 			<div className="flex flex-col gap-4 items-center justify-center">
-				<h1 className="heading font-bold text-[#F48C06]">
-					<span className="heading font-bold text-[#2F327D]">
-						All-In-One &nbsp;
-					</span>
-					Cloud Software.
-				</h1>
+				<motion.h1
+					className="heading font-bold text-[#F48C06]"
+					initial="hidden"
+					whileInView="show"
+					variants={staggerContainer(0.5, 0.2)}>
+					<TypingText title="All-In-One Cloud Software." />
+				</motion.h1>
 				<p className="paragraph text-center sm:text-left xm:text-left font-normal text-[#696984]">
 					Skilline is one powerful online software suite that combines
 					<br className="sm:hidden xm:hidden" />

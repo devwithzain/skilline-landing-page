@@ -1,18 +1,21 @@
-import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { Button } from "@/components";
+import { TypingText } from "./custom-text";
+import { staggerContainer } from "@/motion";
 import { explanation, instructorImg, play, studentImg } from "@/public";
 
 export default function About() {
 	return (
 		<div className="w-full flex flex-col items-center justify-center padding-y padding-x gaping">
 			<div className="w-full flex flex-col gap-4 items-center sm:items-start xm:items-start justify-center">
-				<h1 className="heading font-bold text-[#F48C06]">
-					<span className="heading font-bold text-[#2F327D]">
-						What is &nbsp;
-					</span>
-					Skilline?
-				</h1>
+				<motion.h1
+					className="heading font-bold text-[#F48C06]"
+					initial="hidden"
+					whileInView="show"
+					variants={staggerContainer(0.5, 0.2)}>
+					<TypingText title="What is Skilline?" />
+				</motion.h1>
 				<p className="paragraph text-center sm:text-left xm:text-left font-normal text-[#696984]">
 					Skilline is a platform that allows educators to create online classes
 					whereby they can <br /> store the course materials online; manage
