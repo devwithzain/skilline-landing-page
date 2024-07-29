@@ -1,4 +1,4 @@
-import { airbnb, amazon, billing, calander, calanders, customer, customers, facebook, google, grab, netflix } from "@/public"
+import { airbnb, amazon, billing, calanders, customer, facebook, google, grab, netflix } from "@/public";
 
 export const navbarItem = [
     {
@@ -21,7 +21,7 @@ export const navbarItem = [
         title: "About Us",
         href: "/about-us"
     },
-]
+];
 
 export const partnersItem = [
     {
@@ -48,7 +48,7 @@ export const partnersItem = [
         id: 4,
         src: grab,
     },
-]
+];
 
 export const featuresItem = [
     {
@@ -69,4 +69,4 @@ export const featuresItem = [
         para: "Automate and track emails to individuals or groups. Skilline’s built-in system helps organize your organization",
         src: customer
     },
-]
+];
